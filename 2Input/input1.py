@@ -8,5 +8,5 @@ print('Siapa nama kamu? ')
 nama = input()
 print('Berapa umurmu? ')
 umur = int(input())
-
+hjhjh
 '''
