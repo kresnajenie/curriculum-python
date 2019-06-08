@@ -1,4 +1,4 @@
-def AddContact(nama, umur, berat):
+def AddContact(nama, umur, berat): #Parameter nama umur berat hanya permisalan, yang sebenarnya ada di file ContactProject
     try:
         customer_data = {}
         customer_data["name"] = nama
@@ -12,7 +12,7 @@ def AddContact(nama, umur, berat):
         else:
             customer_data["type"] = "Normal"
 
-        return customer_data
+        return customer_data #Agar data yang sudah di input dapat diambil kembali ketika diperlukan
     except ValueError:
         print('Please enter the field correctly')
     except:

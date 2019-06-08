@@ -1,9 +1,9 @@
-import kalkulator as kode
+import kalkulator_operasi as kode
 #Gak pakai file kalkulator_operasi
 while True:
-    print('Apakah anda ingin memakai kalkulator? (ya/tidak)')
+    print('Apakah anda ingin memakai kalkulator? (yes/no)')
     pilihan = input()
-    if pilihan.lower() == 'ya': #.lower agar pilihan tidak sensitif terhadap Upper/Lower case
+    if pilihan.lower() == 'yes': #.lower agar pilihan tidak sensitif terhadap Upper/Lower case
         print("""
                 Hi, here is how you use the calculator
                 to start, choose the operation you want to use.
@@ -22,7 +22,7 @@ while True:
             break #Break agar tidak timbul pesan yang ter-loop
         print('Masukkan angka kedua : ')
         try:
-           b = int(input())
+            b = int(input())
         except ValueError:
             print('Please try again')
             break # sama kyk diatas
@@ -61,7 +61,8 @@ while True:
             else:
                 print('Incorrect value')
                 break
+    elif pilihan.lower() == 'no':
+        print("Okayy, byeee!")
     else:
-        print('Ok bye')
-        break
+        pass
 
