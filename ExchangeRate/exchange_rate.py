@@ -21,7 +21,7 @@ def RealTimeCurrencyExchangeRate(from_currency) :
 	# base_url variable store base url 
 	base_url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE' # cara menggunakan api
 
-	api_key = "WISLGFAJ9K07J4NE"
+	api_key = "RCBPGO0BOZ6KLM1Q"
 	# main_url variable store complete url 
 	main_url = base_url + "&from_currency=" + from_currency + "&to_currency=" + to_currency + "&apikey=" + api_key # query dari api pake api key
 
@@ -56,4 +56,6 @@ def RealTimeCurrencyExchangeRate(from_currency) :
 
 	ech = exc.Exchange(froms, to, time_wib, price) #inputs the parameters to the class
 	return ech
+
+
 
