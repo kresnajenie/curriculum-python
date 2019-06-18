@@ -1,4 +1,3 @@
-import kalkulator_operasi as kode
 #Gak pakai file kalkulator_operasi
 while True:
     print('Apakah anda ingin memakai kalkulator? (yes/no)')
@@ -28,12 +27,11 @@ while True:
             break # sama kyk diatas
         while True: #Agar bisa diulang terus
             if operasi == "+":
-                try:
-                    hasiltambah = kode.tambah(a, b)
-                    print(hasiltambah)
-                    break
-                except:
-                    print('Try again')
+                
+                hasiltambah = kode.tambah(a, b)
+                print(hasiltambah)
+                break
+                
             elif operasi == "-":
                 try:
                     hasilkurang = kode.kurang(a,b)

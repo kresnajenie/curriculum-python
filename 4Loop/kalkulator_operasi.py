@@ -1,4 +1,4 @@
-import kalkulator as kode
+import kalkulator_operasi as kode
 
 def operasi_plus(tambah1, tambah2):
     try:
