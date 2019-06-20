@@ -9,6 +9,7 @@ $ pip install flask_cors
 ```
 ## Return Text
 
+Saya mempunyai file bernama `flask_app.py` yang berisi:
 ```python
 from flask import Flask, request
 from flask_restful import Resource, Api
@@ -26,6 +27,23 @@ api.add_resource(HelloWorld, '/')
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+Jalankan di __cmder__ atau __terminal__ dengan:
+```
+$ python3 flask_app.py
+```
+atau
+```
+$ py flask_app.py
+```
+Jika berhasil dijalankan maka akan keluar:
+
+![](https://github.com/kresnajenie/curriculum-python/blob/master/wiki_images/Flask/terminal.png)
+
+Sekarang dicoba di broser dan ke url sesuai yang ada di terminal yaitu http://127.0.0.1:5000/:
+
+![](https://github.com/kresnajenie/curriculum-python/blob/master/wiki_images/Flask/browser.png)
+
 
 ## Return Text with Argument
 
